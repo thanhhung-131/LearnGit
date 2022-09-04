@@ -1,21 +1,343 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/eeae6468e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>The Band</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/octopus.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
 
-<head>
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="bluestyle.css" />
-</head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <!-- Begin: Nav -->
+        <ul id="nav">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#band">Band</a>
+          </li>
+          <li>
+            <a href="#tour">Tour</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="#">
+              More
+              <i class="nav-caret-down fas fa-caret-down"></i>
+            </a>
+            <ul class="subnav">
+              <li><a href="#">Merchandise</a></li>
+              <li><a href="#">Extras</a></li>
+              <li><a href="#">Media</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- End: Nav -->
 
-<body>
-    <h1>Hello world!</h1>
-    <div>
-        <img src="Nezuko.jpg" alt="Hello World from Space" style="width: 100%; max-width: 640px" />
+        <!-- Mobile Menu button -->
+        <div id="mobile-menu" class="mobile-menu-btn">
+          <i class="menu-icon fas fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Search Button -->
+        <div class="search-btn">
+          <i class="search-icon fas fa-thin fa-search"></i>
+        </div>
+      </div>
+
+      <div id="slider">
+        <div class="text-content">
+          <div class="text-heading">Chicago</div>
+          <div class="text-description">
+            Thank you, Chicago - A night we won't forget.
+          </div>
+        </div>
+      </div>
+
+      <div id="content">
+        <!-- About Section -->
+        <div id="band" class="content-section">
+          <h2 class="section-heading">THE BAND</h2>
+          <p class="section-sub-heading">We love music</p>
+          <p class="about-content">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <div class="row members-list">
+            <div class="col col-third s-col-full mt-16 members-item">
+              <p class="members-name">Name</p>
+              <img
+                src="/assets/img/band/bandmember.jpg"
+                alt="Name"
+                class="members-image"
+              />
+            </div>
+            <div class="col col-third s-col-full mt-16 members-item">
+              <p class="members-name">Name</p>
+              <img
+                src="/assets/img/band/bandmember.jpg"
+                alt="Name"
+                class="members-image"
+              />
+            </div>
+            <div class="col col-third s-col-full mt-16 members-item">
+              <p class="members-name">Name</p>
+              <img
+                src="/assets/img/band/bandmember.jpg"
+                alt="Name"
+                class="members-image"
+              />
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!-- End About Section -->
+
+        <!-- Tour Section -->
+        <div id="tour" class="tour-section">
+          <div class="content-section">
+            <div class="tour-content">
+              <h2 class="section-heading text-white">TOUR DATES</h2>
+              <p class="section-sub-heading text-white">
+                Remember to book your tickets!
+              </p>
+              <br />
+              <!-- Tickets -->
+              <ul class="tickets-list">
+                <li>
+                  September<span class="sold-out text-white">Sold out</span>
+                </li>
+                <li>
+                  October<span class="sold-out text-white">Sold out</span>
+                </li>
+                <li>
+                  November <span class="quantity text-white clear">3</span>
+                </li>
+              </ul>
+              <!-- Places -->
+              <div class="row places-list">
+                <div class="col col-third s-col-full mt-16">
+                  <img
+                    src="/assets/img/places/newyork.jpg"
+                    alt="New York"
+                    class="place-img"
+                  />
+                  <div class="place-body">
+                    <h3 class="place-heading">New York</h3>
+                    <p class="place-time">Fri 27 Nov 2016</p>
+                    <p class="place-description">
+                      Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                    </p>
+                    <button class="place-buy-btn">Buy Tickets</button>
+                  </div>
+                </div>
+                <div class="col col-third s-col-full mt-16">
+                  <img
+                    src="/assets/img/places/paris.jpg"
+                    alt="Paris"
+                    class="place-img"
+                  />
+                  <div class="place-body">
+                    <h3 class="place-heading">Paris</h3>
+                    <p class="place-time">Sat 28 Nov 2016</p>
+                    <p class="place-description">
+                      Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                    </p>
+                    <button class="place-buy-btn">Buy Tickets</button>
+                  </div>
+                </div>
+                <div class="col col-third s-col-full mt-16">
+                  <img
+                    src="/assets/img/places/sanfran.jpg"
+                    alt="San Francisco"
+                    class="place-img"
+                  />
+                  <div class="place-body">
+                    <h3 class="place-heading">San Francisco</h3>
+                    <p class="place-time">Sun 29 Nov 2016</p>
+                    <p class="place-description">
+                      Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                    </p>
+                    <button class="place-buy-btn">Buy Tickets</button>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Tour Section -->
+
+        <!-- Contact Section -->
+        <div id="contact" class="content-section contact">
+          <h2 class="section-heading">CONTACT</h2>
+          <p class="section-sub-heading">Fan? Drop a note!</p>
+          <div class="row contact-content">
+            <div class="col col-half contact-info">
+              <p><i class="material-icons">location_on</i>Chicago, US</p>
+              <p><i class="material-icons">phone</i>Phone: +00 151515</p>
+              <p><i class="material-icons">mail</i>Email: mail@mail.com</p>
+            </div>
+            <div class="col col-half">
+              <form action="">
+                <div class="row info-mess">
+                  <div class="col col-half contact-form">
+                    <input
+                      type="text"
+                      name=""
+                      placeholder="Name"
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col col-half contact-form">
+                    <input
+                      type="email"
+                      name=""
+                      placeholder="Email"
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-full contact-form">
+                    <input
+                      type="message"
+                      name=""
+                      placeholder="Message"
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <input class="btn send-mess" type="submit" value="SEND" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- End Contact Section -->
+      </div>
     </div>
-    <p>This is the first file in my new Git Repo.</p>
-    <p>This line is here to show how merging works.</p>
-    <div>
-        <img src="gojo.jpg" alt="Hello Git" style="width: 100%; max-width: 640px" />
+    <div class="modal">
+      <div class="modal-container">
+        <div class="modal-close">
+          <i class="material-icons" style="font-size: 18px">close</i>
+        </div>
+        <header class="modal-header">
+          <i class="modal-heading-icons fas fa-suitcase"></i>
+          Tickets
+        </header>
+        <div class="modal-body">
+          <label for="ticket-quantity" class="modal-label">
+            <i class="fas fa-shopping-cart"></i>
+            Tickets, $15 per person
+          </label>
+          <input
+            id="ticket-quantity"
+            type="text"
+            class="modal-input"
+            placeholder="How many?"
+          />
+          <label for="ticket-email" class="modal-label">
+            <i class="fas fa-user"></i>
+            Send To
+          </label>
+          <input
+            id="ticket-email"
+            type="email"
+            class="modal-input"
+            placeholder="Enter mail"
+          />
+          <button id="buy-tickets">PAY<i class="fas fa-check"></i></button>
+        </div>
+        <footer class="modal-footer">
+          <p class="modal-help">Need <a href="">help?</a></p>
+        </footer>
+      </div>
     </div>
-</body>
+    <div class="map-img">
+      <img src="/assets/img/map/map.jpg" alt="Map" />
+    </div>
+    <div id="footer">
+      <p>
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-snapchat"></i></a>
+        <a href=""><i class="fab fa-pinterest-p"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+      </p>
+    </div>
 
+    <script>
+      var header = document.getElementById("header");
+      var mobileMenu = document.getElementById("mobile-menu");
+      var headerHeight = header.clientHeight;
+
+      // Đóng mở mobile menu
+      mobileMenu.onclick = function () {
+        var isClosed = header.clientHeight === headerHeight;
+        if (isClosed) {
+          header.style.height = "auto";
+        } else {
+          header.style.height = null;
+        }
+      };
+
+      // Tự động đóng khi chọn menu
+      var menuItems = header.querySelectorAll("#nav li a[href*='#']");
+      for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i];
+        menuItem.onclick = function (event) {
+          // var isParentMenu =
+          //   this.nextElementSibling &&
+          //   this.nextElementSibling.classList.contains("subnav");
+          // if (isParentMenu) {
+          //   header.style.height = null;
+          // } else {
+          //   event.preventDefault();
+          // }
+
+          /////
+          var sub = header.querySelector("#nav .subnav");
+
+          if (!sub.classList.contains("show")) {
+            sub.classList.add("show");
+          } else {
+            sub.classList.remove("show");
+          }
+
+          if (event.target.parentElement.querySelector(".subnav") === null) {
+            header.style.height = null;
+          } else {
+            event.preventDefault();
+          }
+        };
+      }
+    </script>
+  </body>
 </html>

@@ -1,0 +1,58 @@
+/* Mobile: width < 740px */
+@media (max-width: 46.1875em) {
+  .s-col-full {
+    width: 100%;
+  }
+
+  #header {
+    overflow: hidden;
+  }
+
+  #header .mobile-menu-btn {
+    display: inline-block;
+  }
+
+  #header .search-btn {
+    display: none;
+  }
+
+  #nav {
+    display: block;
+  }
+
+  #nav > li {
+    display: block;
+  }
+
+  #nav li a {
+    display: block;
+    padding: 1px 24px;
+  }
+
+  #nav > li:first-child {
+    display: inline-block;
+  }
+
+  #nav .subnav {
+    background-color: #333;
+  }
+  #nav .subnav.show {
+    position: initial;
+  }
+
+  #nav .subnav a {
+    color: #fff;
+    padding: 5px 40px;
+  }
+
+  #content .members-item .members-image {
+    width: 60%;
+  }
+}
+/* Tablet: width >= 740px and width < 1024px */
+/* @media (min-width: 46.25em) and (max-width: 63.9375em) {
+} */
+
+/* PC: width >=1024 */
+/* @media only screen and (min-width: 64em) {
+} */
